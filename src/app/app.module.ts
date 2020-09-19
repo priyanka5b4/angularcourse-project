@@ -10,6 +10,10 @@ import { RecipedetailComponent } from './recipes/recipedetail/recipedetail.compo
 import { RecipeitemComponent } from './recipes/recipelist/recipeitem/recipeitem.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/shopping-list-edit.component'
+import { FormsModule } from '@angular/forms';
+import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
+import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+
 
 @NgModule({
   declarations: [
@@ -20,12 +24,16 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
     RecipedetailComponent,
     RecipeitemComponent,
     ShoppingListComponent,
-    ShoppingListEditComponent
-
+    ShoppingListEditComponent,
+    BasicHighlightDirective,
+    BetterHighlightDirective
+  
+   
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
