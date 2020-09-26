@@ -13,6 +13,12 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-list-edit/sh
 import { FormsModule } from '@angular/forms';
 import { BasicHighlightDirective } from './basic-highlight/basic-highlight.directive';
 import { BetterHighlightDirective } from './better-highlight/better-highlight.directive';
+import { dropdownDirective } from './shared/dropdown.directive';
+import { ShoppingListService } from './shopping-list/shopping-list.service';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+
+
 
 
 @NgModule({
@@ -26,7 +32,12 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
     ShoppingListComponent,
     ShoppingListEditComponent,
     BasicHighlightDirective,
-    BetterHighlightDirective
+    BetterHighlightDirective,
+    dropdownDirective,
+    RecipeStartComponent,
+    RecipeEditComponent
+  
+  
   
    
   ],
@@ -35,7 +46,7 @@ import { BetterHighlightDirective } from './better-highlight/better-highlight.di
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ShoppingListService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

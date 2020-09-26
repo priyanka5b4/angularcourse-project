@@ -1,5 +1,5 @@
-import { templateJitUrl } from '@angular/compiler';
-import { Component, EventEmitter, Output } from '@angular/core';
+
+import { Component } from '@angular/core';
 
 @Component({
       selector:'app-header',
@@ -8,11 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 
 export class AppHeaderComponent {
-   @Output() selectedFeature= new EventEmitter<string>();
-   
-   selectFeature(feature:string){
-           this.selectedFeature.emit(feature);
-   }
+  
 
 
 }
